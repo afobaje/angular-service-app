@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-service-app';
+  generic:string='our wide resource';
+
+
+  
 }

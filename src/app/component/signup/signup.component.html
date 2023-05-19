@@ -1,0 +1,46 @@
+<section class="signup">
+  <div class="signup-wrapper">
+    <div class="signup-form">
+      <div class="topic">
+        <h1>Create your Swiftr account</h1>
+        <p class="small">
+          Already have an account? <a routerLink="/login">Sign In</a>
+        </p>
+      </div>
+      <form action="">
+        <!-- <div class="name-form flex mt-1 flex-column">
+          <label for="name">Name</label>
+          <input type="text" name="name" />
+        </div> -->
+        <div class="email-form flex mt-1 flex-column">
+          <label for="email">Email</label>
+          <input type="email" #email required />
+        </div>
+        <div class="password-form flex mt-1 flex-column">
+          <label for="password">Password</label>
+          <div class="password-wrapper relative flex flex-column">
+            <input  [type]="show?'text':'password'" autocomplete="current-password" #pass required />
+            <div class="visible">
+              <button (click)="showValue()">{{ show ? "hide" : "show" }}</button>
+            </div>
+          </div>
+          <p class="smaller">At least 8 characters long</p>
+        </div>
+        <div class="submit-button mt-1 flex flex-column">
+          <button class="account" (click)="signInWithEmail(email, pass)">
+            Create Account
+          </button>
+        </div>
+      </form>
+      <div class="form-context flex">
+        <div class="hor-line"></div>
+        <span>or sign up with</span>
+        <div class="hor-line"></div>
+      </div>
+      <div class="sign-up-helpers">
+        <button (click)="signInWithGoogle()">Google</button>
+        <button>Github</button>
+      </div>
+    </div>
+  </div>
+</section>

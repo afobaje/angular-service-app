@@ -1,0 +1,9 @@
+<div class="items-wrapper">
+  <app-work-item
+    *ngFor="let item of items"
+    [name]="item.name"
+    [level]="item.level"
+    [title]="item.title"
+    [rating]="item.rating"
+  ></app-work-item>
+</div>
